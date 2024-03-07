@@ -5,7 +5,19 @@ body {
 }
 
 .container {
-  /* 10% vänster och höger marginal, samtidigt som du tar hänsyn till de yttre marginalerna på 20px */
+  /* margin: Detta är en CSS-egenskap som används för att ange utrymmet runt ett element. 
+   Marginalen är det tomma utrymmet utanför det faktiska innehållet i elementet. */
+
+  /* 20px: Detta sätter en fast marginal på 20 pixlar runt alla sidor av elementet. 
+   Det betyder att det kommer att finnas 20 pixlar av tomt utrymme mellan elementet 
+   och dess omgivning. */
+
+  /* calc(10% - 20px): Detta är en mer avancerad del av koden. 
+   calc() är en funktion som tillåter beräkningar inom CSS. 
+   Här används den för att beräkna en procentuell bredd baserat på förälderens 
+   bredd och sedan subtrahera 20 pixlar från den. 
+   Detta resulterar i en variabel marginalstorlek som är 10% av förälderens 
+   bredd minus 20 pixlar. */
   margin: 20px calc(10% - 20px);
   text-align: center;
 }
