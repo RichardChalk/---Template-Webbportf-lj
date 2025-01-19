@@ -40,9 +40,15 @@ footer,
 
 nav {
   height: 80px;
-  /* Sätt line-height samma som höjden för att centrera texten vertikalt */
-  line-height: 80px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between logo and nav items */
   text-align: right;
+}
+
+nav .logo {
+  max-height: 80%;
+  margin-left: 0.5rem;
 }
 nav ul {
   list-style: none;
